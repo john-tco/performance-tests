@@ -1,0 +1,9 @@
+config:
+  target: 'localhost:3000'
+  engines:
+    playwright: { launchOptions: { headless: false } }
+  processor: ./flows.js
+scenarios:
+  - name: 'Find a grant (Soak test config)'
+    engine: playwright
+    flowFunction: 'findAGrant'

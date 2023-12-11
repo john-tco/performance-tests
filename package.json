@@ -1,0 +1,13 @@
+{
+  "name": "Find a grant performance testing",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "artillery": "2.0.3",
+    "dotenv": "^16.3.1"
+  },
+  "scripts": {
+    "test:spike": "artillery run spikeTest.yaml",
+    "test:soak": "artillery run soakTest.yaml"
+  }
+}

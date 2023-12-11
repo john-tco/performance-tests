@@ -1,0 +1,12 @@
+config:
+  target: 'localhost:3000'
+  # phases:
+  #   - arrivalRate: 1
+  #     duration: 10
+  engines:
+    playwright: { launchOptions: { headless: false } }
+  processor: ./flows.js
+scenarios:
+  - name: 'Find a grant (Spike test config)'
+    engine: playwright
+    flowFunction: 'findAGrant'
